@@ -24,7 +24,15 @@ export default {
             name: null,
             age: null,
             job: null,
+            someObj: {
+                color: 'yellow',
+                number: 50,
+                isPublished: false,
+            }
         }
+    },
+
+    mounted() {
     },
 
     methods: {
@@ -34,8 +42,13 @@ export default {
                 this.name = null
                 this.age = null
                 this.job = null
+                this.$parent.$refs.index.getPeople()
             })
         }
+    },
+
+    components: {
+
     }
 
 }

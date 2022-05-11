@@ -1,7 +1,7 @@
 <template>
     <div>
         <CreateComponent></CreateComponent>
-        <IndexComponent></IndexComponent>
+        <IndexComponent ref="index"></IndexComponent>
 <!--        <table class="table">-->
 <!--            <thead>-->
 <!--            <tr>-->
@@ -41,7 +41,9 @@ export default {
     },
 
     methods: {
-
+        parentLog() {
+            console.log('this is parent component');
+        }
     },
 
     computed: {
